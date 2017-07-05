@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="app.developteam.detectfall.myapplication.activity.EmergencyContactActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@color/colorPrimary"
+            android:padding="5dp"
+            app:contentInsetStart="0dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/back"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_centerVertical="true"
+                    android:onClick="onClick"
+                    android:padding="10dp"
+                    android:src="@drawable/left48w" />
+
+                <TextView
+                    android:id="@+id/tvtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/back"
+                    android:text="Emergency Contact"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/textsize" />
+            </RelativeLayout>
+        </android.support.v7.widget.Toolbar>
+
+        <LinearLayout
+            android:id="@+id/formuser"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/frame"
+            android:gravity="center_vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:gravity="left"
+                android:text="Username"
+                android:textSize="@dimen/textsize" />
+
+            <EditText
+                android:id="@+id/edtuser"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:hint="Username"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="10"
+                android:text=""
+                android:textSize="@dimen/textsize" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/formpass"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/frame"
+            android:gravity="center_vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:text="@string/password"
+                android:textSize="@dimen/textsize" />
+
+            <EditText
+                android:id="@+id/edtpass"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:hint="Password"
+                android:inputType="text"
+                android:lines="1"
+                android:maxLength="15"
+                android:text=""
+                android:textSize="@dimen/textsize" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/formcontact"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:background="@drawable/frame"
+            android:gravity="center_vertical"
+            android:padding="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                android:layout_weight="1"
+                android:text="@string/contact"
+                android:textSize="@dimen/textsize" />
+
+            <EditText
+                android:id="@+id/edtcontact"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/activity_horizontal_margin"
+                android:gravity=""
+                android:hint="Number"
+                android:inputType="number"
+                android:lines="1"
+                android:maxLength="10"
+                android:text=""
+                android:textSize="@dimen/textsize" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/caption"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:padding="@dimen/activity_horizontal_margin"
+            android:text=""
+            android:textColor="@color/black"
+            android:textSize="@dimen/textsize" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@android:drawable/ic_menu_save" />
+</android.support.design.widget.CoordinatorLayout>

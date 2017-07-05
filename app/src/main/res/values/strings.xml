@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Detection Fall</string>
+    <string name="fall">Fall</string>
+    <string name="z">Z</string>
+    <string name="y">Y</string>
+    <string name="x">X</string>
+    <string name="acc">Acceleration</string>
+    <string name="calculate">Calculate</string>
+    <string name="clear">Clear</string>
+    <string name="emergencycontact">Emergency Contact</string>
+    <string name="ip_address">IP Address</string>
+    <string name="defaultip">192.168.1.37</string>
+    <string name="emergency_contact">Emergency Contact</string>
+    <string name="password">Password</string>
+    <string name="contact">Contact</string>
+    <string name="title_activity_main3">Main3Activity</string>
+</resources>
